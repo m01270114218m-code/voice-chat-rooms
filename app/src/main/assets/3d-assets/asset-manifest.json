@@ -1,0 +1,16 @@
+{
+  "pack": "farah-chat-assets",
+  "version": "1.0.0",
+  "formats": ["svga", "glb", "gltf", "png", "webp"],
+  "groups": {
+    "rooms": ["royal_lounge", "galaxy_night", "diamond_club"],
+    "avatars": ["male_default", "female_default", "host"],
+    "gifts": ["heart", "diamond", "crown", "rocket"],
+    "effects": ["sparkle", "confetti", "fireworks", "neon_ring"],
+    "entrances": ["royal", "galaxy", "gold"],
+    "props": ["sofa", "microphone_pedestal", "lamp", "table"],
+    "ui": ["home", "rooms", "mic", "gift", "people", "profile", "settings"],
+    "backgrounds": ["royal", "galaxy", "diamond"]
+  },
+  "licensePolicy": "Only assets with an explicit compatible license may be bundled."
+}

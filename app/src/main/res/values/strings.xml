@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Farah Chat</string>
+    <string name="asset_pack_name">Farah Chat 3D Assets</string>
+    <string name="asset_rooms">3D Room Environments</string>
+    <string name="asset_avatars">3D Avatars</string>
+    <string name="asset_props">3D Furniture and Props</string>
+    <string name="asset_ui">3D UI Icons</string>
+    <string name="asset_backgrounds">3D Backgrounds and Lighting</string>
+</resources>

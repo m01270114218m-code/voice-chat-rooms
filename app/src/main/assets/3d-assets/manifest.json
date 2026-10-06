@@ -1,0 +1,15 @@
+{
+  "pack": "farah-chat-3d",
+  "version": "1.0.0",
+  "animationFormat": "SVGA",
+  "runtime3DFormat": "GLB/GLTF",
+  "categories": {
+    "rooms": ["royal_lounge", "galaxy_night", "diamond_club"],
+    "avatars": ["default_male", "default_female", "host"],
+    "gifts": ["heart", "diamond", "crown", "rocket"],
+    "effects": ["sparkle", "confetti", "fireworks", "neon_ring"],
+    "entrances": ["gold", "galaxy", "royal"],
+    "ui": ["home", "rooms", "mic", "gift", "people", "profile", "settings"],
+    "backgrounds": ["royal", "galaxy", "diamond"]
+  }
+}
