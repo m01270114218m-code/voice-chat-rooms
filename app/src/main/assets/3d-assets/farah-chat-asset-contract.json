@@ -1,0 +1,15 @@
+{
+  "project":"Farah Chat",
+  "branch":"android-app",
+  "style":"premium-3d",
+  "rooms":{
+    "Royal Lounge":{"background":"royal_room_3d","micSeats":8,"entrance":"royal_entrance"},
+    "Galaxy Night":{"background":"galaxy_room_3d","micSeats":8,"entrance":"galaxy_entrance"},
+    "Diamond Club":{"background":"diamond_room_3d","micSeats":8,"entrance":"diamond_entrance"}
+  },
+  "micStates":["idle","speaking","muted","occupied","pressed"],
+  "gifts":["heart","diamond","crown","rocket"],
+  "effects":["sparkle","confetti","fireworks","neon_ring"],
+  "navigationIcons":["home","rooms","mic","gift","people","profile","settings"],
+  "policy":"Binary 3D/SVGA files must be real files with a compatible license; IDs in this contract are bindings, not fake binary assets."
+}
