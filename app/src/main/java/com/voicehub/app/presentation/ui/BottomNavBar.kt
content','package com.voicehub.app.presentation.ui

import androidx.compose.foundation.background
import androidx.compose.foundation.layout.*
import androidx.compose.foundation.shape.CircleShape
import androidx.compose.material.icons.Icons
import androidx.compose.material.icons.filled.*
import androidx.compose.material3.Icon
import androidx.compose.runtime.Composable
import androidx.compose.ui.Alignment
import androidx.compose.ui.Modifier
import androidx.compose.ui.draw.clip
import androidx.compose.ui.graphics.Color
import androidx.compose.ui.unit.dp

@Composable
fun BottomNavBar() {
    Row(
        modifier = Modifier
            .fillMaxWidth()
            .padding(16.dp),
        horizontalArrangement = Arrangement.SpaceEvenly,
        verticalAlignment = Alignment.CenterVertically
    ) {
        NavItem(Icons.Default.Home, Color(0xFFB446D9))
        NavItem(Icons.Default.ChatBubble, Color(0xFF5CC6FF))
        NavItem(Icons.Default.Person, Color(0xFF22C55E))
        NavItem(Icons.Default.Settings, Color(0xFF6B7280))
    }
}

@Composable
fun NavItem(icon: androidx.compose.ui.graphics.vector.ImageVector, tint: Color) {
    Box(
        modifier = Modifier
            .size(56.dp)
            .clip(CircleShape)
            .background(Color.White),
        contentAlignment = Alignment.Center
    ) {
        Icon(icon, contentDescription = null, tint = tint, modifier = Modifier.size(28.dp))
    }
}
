@@ -1,0 +1,92 @@
+package com.voicehub.app.presentation.screens.settings
+
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import com.voicehub.app.ui.theme.*
+
+@Composable
+fun SettingsScreen(navController: NavController) {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                Brush.verticalGradient(
+                    colors = listOf(
+                        Color(0xFFF8EAFB),
+                        Color(0xFFEAF7FF)
+                    )
+                )
+            )
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(20.dp)
+        ) {
+            Text(
+                text = "الإعدادات",
+                style = MaterialTheme.typography.headlineMedium,
+                fontWeight = FontWeight.Bold,
+                color = DarkText
+            )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            SettingsItem(title = "الملف الشخصي", icon = Icons.Default.Person)
+            SettingsItem(title = "الأمان والخصوصية", icon = Icons.Default.Lock)
+            SettingsItem(title = "الأصوات والمكالمات", icon = Icons.Default.VolumeUp)
+            SettingsItem(title = "الإشعارات", icon = Icons.Default.Notifications)
+            SettingsItem(title = "الدعم", icon = Icons.Default.HeadsetMic)
+        }
+    }
+}
+
+@Composable
+fun SettingsItem(title: String, icon: androidx.compose.ui.graphics.vector.ImageVector) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 6.dp),
+        shape = RoundedCornerShape(18.dp),
+        colors = CardDefaults.cardColors(containerColor = Color.White)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                Box(
+                    modifier = Modifier
+                        .size(42.dp)
+                        .clip(CircleShape)
+                        .background(Color(0xFFEDE7F6)),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Icon(icon, contentDescription = null, tint = PurplePrimary)
+                }
+                Text(title, fontWeight = FontWeight.Medium)
+            }
+            Icon(Icons.Default.KeyboardArrowLeft, contentDescription = null)
+        }
+    }
+}
