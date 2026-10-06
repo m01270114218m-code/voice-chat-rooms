@@ -1,0 +1,12 @@
+<resources>
+    <string name="asset_pack_version">1.0</string>
+    <string name="asset_room_royal">Royal Lounge</string>
+    <string name="asset_room_galaxy">Galaxy Night</string>
+    <string name="asset_room_diamond">Diamond Club</string>
+    <string name="asset_animation_gift">SVGA Gift Animations</string>
+    <string name="asset_animation_enter">SVGA Entrance Animations</string>
+    <string name="asset_animation_effects">SVGA Room Effects</string>
+    <string name="asset_animation_avatar">Animated 3D Avatars</string>
+    <string name="asset_backgrounds">3D Room Backgrounds</string>
+    <string name="asset_icons">3D UI Icon Set</string>
+</resources>
