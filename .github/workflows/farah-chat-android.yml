@@ -1,0 +1,26 @@
+name: Farah Chat Android Build
+on:
+  push:
+    branches: [Farah-Chat]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.5'
+          channel: stable
+      - run: flutter create --platforms=android .
+        working-directory: farah_chat
+      - run: flutter pub get
+        working-directory: farah_chat
+      - run: flutter analyze
+        working-directory: farah_chat
+      - run: flutter build apk --release
+        working-directory: farah_chat
+      - uses: actions/upload-artifact@v4
+        with:
+          name: farah-chat-apk
+          path: farah_chat/build/app/outputs/flutter-apk/app-release.apk

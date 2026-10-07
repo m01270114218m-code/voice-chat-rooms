@@ -1,0 +1,29 @@
+{
+  "project": "Farah Chat",
+  "branch": "android-app",
+  "verified_sources": [
+    {
+      "name": "Poly Haven",
+      "type": "3D models/textures/HDRI",
+      "license": "CC0",
+      "url": "https://polyhaven.com/"
+    },
+    {
+      "name": "SVGA Samples",
+      "type": "SVGA animations",
+      "license": "varies; samples README restricts some files to learning",
+      "url": "https://github.com/svga/SVGA-Samples"
+    }
+  ],
+  "policy": "Do not bundle SVGA samples marked learning-only. Bundle only assets with a compatible license.",
+  "required_asset_groups": [
+    "rooms",
+    "avatars",
+    "gifts",
+    "entrances",
+    "effects",
+    "props",
+    "ui_icons",
+    "backgrounds"
+  ]
+}
