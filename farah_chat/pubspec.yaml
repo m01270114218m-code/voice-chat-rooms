@@ -1,4 +1,5 @@
 name: farah_chat
+description: Farah Chat - premium voice chat rooms
 publish_to: "none"
 version: 1.0.0+1
 environment:
@@ -7,8 +8,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-  svgaplayer_flutter: ^2.3.8
 flutter:
   uses-material-design: true
   assets:
-    - assets/svga/
+    - assets/
